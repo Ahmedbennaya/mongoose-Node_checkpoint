@@ -1,12 +1,11 @@
-
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import Person from './models/Person.js'; // Ensure this path is correct
+import Person from './models/Person.js'; 
 
-dotenv.config(); // Load environment variables
+dotenv.config(); 
 
 
-// Connect to MongoDB using the MONGO_URI from the .env file
+// Connect to MongoDB 
 mongoose.connect(process.env.MONGO_URI, {
 
 })
@@ -129,10 +128,10 @@ const searchAndChainHelpers = () => {
 };
 
 /**
- * Execute Functions to Demonstrate the Operations
+ * Execute Functions Operations
  */
 
-// Uncomment the operations you want to perform below:
+
 
  //createPerson(); // Create a single person
 // createManyPeople(); // Create multiple people
